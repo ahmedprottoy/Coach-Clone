@@ -1,0 +1,145 @@
+.doings {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doings--header {
+    text-align: center;
+    width: 40%;
+    padding: 30px;
+}
+
+.doings--cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cards {
+    width: 25%;
+    height: auto;
+    padding: 60px 25px;
+    background-color: #075AAE;
+    color: #fff;
+}
+
+.cards--hr {
+    width: 70px;
+}
+
+.cards>h1,
+p,
+button,
+hr {
+    margin: 30px;
+}
+
+.cards p {
+    line-height: 30px;
+}
+
+#cardsButton {
+    background-color: transparent;
+    padding: 15px 25px;
+    color: white;
+    border: 1px solid #fff;
+}
+
+.advice {
+    width: 25%;
+    height: auto;
+    padding: 60px 25px;
+    background-color: #F4F6F6;
+    color: #000;
+}
+
+.advice>h1,
+p,
+button {
+    margin: 30px;
+}
+
+.doings--advice {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.advice p,
+.ebook p {
+    line-height: 30px;
+}
+
+.ebook {
+    width: 51.5%;
+    height: auto;
+    padding: 60px 25px;
+    background-image: url(images/books.png);
+    
+    background-color: #F4F6F6;
+    color: #000;
+    background-repeat: no-repeat;
+    background-position: bottom 5px left 7px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ebook--content {
+    width: 70%;
+}
+
+.ebook--content>h3,
+p,
+button,
+hr {
+    margin: 30px;
+}
+
+@media screen and (max-width:954px) {
+    .doings--header {
+        width: 90%;
+    }
+
+    .cards {
+        width: 30%;
+    }
+
+    .advice {
+        width: 30%;
+    }
+
+    .ebook {
+        width: 61.5%;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    .cards {
+        width: 100%;
+    }
+
+    .doings--cards {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .doings--advice {
+        flex-direction: column-reverse;
+    }
+
+    .advice {
+        width: 100%;
+    }
+
+    .ebook {
+        width: 100%;
+    }
+}

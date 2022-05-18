@@ -1,0 +1,17 @@
+.copyright{
+    padding:40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+@media screen and (max-width: 954px) {
+    .copyright{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .copyright>p{
+        margin-top: 20px;
+    }
+}

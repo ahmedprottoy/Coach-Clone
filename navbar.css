@@ -1,0 +1,95 @@
+/* nav design  */
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav--img{
+    width: 230px;
+}
+
+.nav--option ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+}
+/* .nav--option ul li:first-child{
+    color: #075AAE;
+} */
+
+
+.nav--option ul li a:hover {
+    color: #075AAE;
+}
+.nav--option ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.toggle{
+    padding:8px;
+    background-color: #075AAE;
+    border-radius:5px;
+    display:none;
+}
+.toggle--line{
+    width:25px;
+    height:3px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+#toggle.open .toggle--line:nth-child(1) {
+    transform: translateY(350%) rotateZ(35deg);
+    transition: .3s;
+}
+
+#toggle.open .toggle--line:nth-child(2) {
+    transform: scaleX(0%);
+}
+
+#toggle.open .toggle--line:nth-child(3) {
+    transform: translateY(-190%) rotateZ(-45deg);
+    transition: .3s;
+}
+
+
+
+@media all and (max-width:954px) {
+    .toggle{
+        display:block;
+        position: absolute;
+        top:15px;
+        right:15px;
+    }
+    .nav{
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+    }
+.nav--option ul li{
+    display:block;
+    border-top: 1px solid rgb(215, 214, 214);
+    padding:10px;
+}
+.nav--option{
+    margin-top: 10px;
+    width:100%;
+    display:none;
+}
+   .active{
+       display:block;
+   } 
+
+}
